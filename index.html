@@ -23,11 +23,16 @@
 
   <body>
     <div class="container">
-      <div class="resume">
+      <div id="content" class="resume">
         <div class="header">
-          <h1>Marshal Malean</h1>
-          <h2>UX Developer</h2>
-          <h2>Bangalore, Karnataka</h2>
+          <div>
+            <h1>Marshal Malean</h1>
+            <h2>UX Developer</h2>
+            <h2>Bangalore, Karnataka</h2>
+          </div>
+          <button id="download" class="btn btn-primary print-btn" type="submit">
+            Print / Download
+          </button>
         </div>
         <div class="section">
           <div class="title">Summary</div>
@@ -359,5 +364,13 @@
         </div>
       </div>
     </div>
+
+    <script>
+      document
+        .getElementById("download")
+        .addEventListener("click", function () {
+          window.print();
+        });
+    </script>
   </body>
 </html>
